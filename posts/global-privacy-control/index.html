@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Global Privacy Control w.r.t GDPR :: Jordan&#39;s blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Intro to GPC and GDPR The [Global Privacy Control (GPC)] is a great idea, in the same way do-not-track was a great idea. A consistent method for people to opt out of data sharing everywhere. People should after all have a simple and straight forward way to opt out of data sharing. But as evidenced by do-not-track that&amp;rsquo;s not enough.
+The GPC despite the &amp;lsquo;Global&amp;rsquo; in the name is particularly narrowly targeted." />
+<meta name="keywords" content="GDPR, CCPA, Privacy" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/global-privacy-control/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Global Privacy Control w.r.t GDPR">
+<meta property="og:description" content="Global Privacy Control header is a great idea, but in it&#39;s first incarnation isn&#39;t necessarily GDPR friendly." />
+<meta property="og:url" content="/posts/global-privacy-control/" />
+<meta property="og:site_name" content="Jordan&#39;s blog" />
+
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-10-08 18:19:24 &#43;0100 BST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/global-privacy-control/">Global Privacy Control w.r.t GDPR</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-10-08 
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/gdpr/">GDPR</a>&nbsp;
+    
+    #<a href="/tags/ccpa/">CCPA</a>&nbsp;
+    
+    #<a href="/tags/privacy/">privacy</a>&nbsp;
+    
+    #<a href="/tags/web/">web</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="intro-to-gpc-and-gdpr">Intro to GPC and GDPR<a href="#intro-to-gpc-and-gdpr" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The [Global Privacy Control (GPC)] is a great idea, in the same way do-not-track was a great idea.
+A consistent method for people to opt out of data sharing everywhere.
+People should after all have a simple and straight forward way to opt out of data sharing.
+But as evidenced by do-not-track that&rsquo;s not enough.</p>
+<p>The GPC despite the &lsquo;Global&rsquo; in the name is particularly narrowly targeted.
+In fact it&rsquo;s just one state - California. Although you could argue that in practice means &ldquo;America&rdquo;.
+The GPC targets the California Consumer Privacy Act (CCPA), though it works quite a bit differently from GDPR.
+Here are some base GDPR tenants.</p>
+<ol>
+<li>&ldquo;Consent should be given by a clear affirmative act&rdquo; - GDPR is opt-in not opt-out; in Europe we have to get your permission first</li>
+<li>The consent must be &ldquo;freely given, specific, informed and unambiguous&rdquo; - We have to make sure we&rsquo;ve clearly explained what you&rsquo;re agreeing to</li>
+<li>&ldquo;Silence, pre-ticked  boxes  or  inactivity should not  therefore  constitute consent.&rdquo; - We can&rsquo;t even start by assuming you&rsquo;ll agree</li>
+<li>&ldquo;When the processing has multiple purposes, consent should be given for all of them.&rdquo; - No big catch alls</li>
+</ol>
+<p>And those are all excerpts from just one paragraph, the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679">official GDPR PDF</a> is 88 pages!
+But I&rsquo;ll preface the rest of this by saying being from the EU I know GDPR not the CCPA.
+Take my CCPA pronouncements with the appropriate caution.</p>
+<h1 id="where-we-are-at-the-moment">Where we are at the moment<a href="#where-we-are-at-the-moment" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>So, as a GDPR compliant website operator I already have a mechanism for you to opt in, and therefore opt out.
+But we do all have different ones. Different popups, different categories of processing, different purposes, so the boxes are different.
+GDPR is undoubtedly good but all these restrictions can be a bit of a pain.
+Obviously we need to store all this, what you&rsquo;ve consented to and what you haven&rsquo;t.
+But we also need to get all this from you before anything else.
+This means your first introduction to many GDPR compliant websites is the dialog of a million tickboxes<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+If we add a new feature and thus a new third party processor, you get to see it again (didn&rsquo;t you miss it?).
+If we embed Google Maps in a website we, acting as the data controller, have sent your information (albeit indirectly) to Google.
+So there&rsquo;s a tickbox for that&hellip; you get the picture - we&rsquo;re required to have this box (with some exceptions).</p>
+<p><img src="dialog_examples.png" alt="The BBC&rsquo;s page (left) is pretty inoffensive. Fandom&rsquo;s (right) is well&hellip; not.">
+The BBC&rsquo;s page on the left is pretty inoffensive. Fandom&rsquo;s on the right is well&hellip; not (note the scrollbar!).
+Who&rsquo;s reading all those tick boxes and making an informed decision before using the website?
+I don&rsquo;t believe for a moment their user acceptance rate is high for those settings.</p>
+<h1 id="so-i-want-to-add-in-the-global-privacy-control">So I want to add in the Global Privacy Control<a href="#so-i-want-to-add-in-the-global-privacy-control" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Actually no; lets take a step back and start one step earlier than that.
+As a website operator <em>why do I want the GPC?</em>. What does it do for me?</p>
+<ol>
+<li>It makes opting out easier - <strong>bad</strong></li>
+<li>It&rsquo;s a second thing to support and test costing developer time - <strong>bad</strong></li>
+<li>A user could consent to my popup and send a GPC at the same time - <strong>bad</strong></li>
+<li>The spec says not enabling it means the header doesn&rsquo;t show - <strong>?</strong></li>
+</ol>
+<p>Point 1 is clearly good for the individual but it&rsquo;s bad for the business.
+Remember they want you opted in - it makes money <em>sometimes a lot of money</em>.
+Point 2 is self-evident.
+Point 3 is actually pretty complicated.
+I&rsquo;ve now got two different signals from the user, in theory both are legally binding.
+If I pick the &lsquo;wrong one&rsquo; for some unknown definition of &lsquo;wrong one&rsquo; to be decided by the EU/ICO later on a case-by-case basis I&rsquo;m on the hook.
+If I don&rsquo;t support the GPC however and just ignore it completely then I&rsquo;m back in the clear with my own self-consistent dialog.
+I had a chat with a colleague about adding support for this to one of our sites.
+Everything kept circling back to this legal grey area it would drop us in, rightly so (there&rsquo;s enough already thanks).
+Finally point 4 means I can&rsquo;t forgo the dialog in favour of the GPC because theres no explicit opt-in as we&rsquo;ve already said GDPR requires.
+Functionally I can&rsquo;t tell the difference between &ldquo;opt in&rdquo; and &ldquo;GPC not supported&rdquo;.
+We haven&rsquo;t even gotten to the informed consent requirement we mentioned.</p>
+<p>To be fair to the GPC it&rsquo;s not trying to replace that GDPR dialog.
+But my point here really is that if it&rsquo;s not attempting to replace that dialog what good is it to me given the above points?
+Again, it&rsquo;s good for &lsquo;you&rsquo; or &lsquo;us&rsquo; but not &lsquo;for the website&rsquo;.
+In fact, if GPC gets legal recognition via CCPA and I run a global site I actually now legally need both.
+The lack of a GPC is enough for CCPA but not for GDPR.
+But also, remember they can disagree with each other!
+So now I need geoip based lookups to know what to serve; if I get it wrong and ignore the GPA to serve a GDPR notice the user consented to I&rsquo;m potentially liable.
+If I listen to the GPA and ignore the GDPR consent I&rsquo;ve got a user wondering why the feature they turned on still doesn&rsquo;t work.
+My head hurts 😕</p>
+<hr>
+<h1 id="so-what-are-these-privacy-things-about-anyway">So what are these privacy things about anyway<a href="#so-what-are-these-privacy-things-about-anyway" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>It seems to me the core tenant of the privacy regulations is this: <em>You should have their permission</em>.
+But wait! We have a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API">model for that now don&rsquo;t we</a>?
+So hear me out here&hellip; What if our websites code looked like this?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">googleMapsPerm</span> <span style="color:#f92672">=</span> {
+	<span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Access Google Maps&#39;</span>,
+	<span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;We would like your permission to send your data to google maps&#39;</span>,
+	<span style="color:#a6e22e">descriptionRich</span><span style="color:#f92672">:</span> <span style="color:#e6db74">`&lt;p&gt;
+</span><span style="color:#e6db74">		Can we show you a google map?
+</span><span style="color:#e6db74">		&lt;small&gt;This sends stuff to Google&lt;/small&gt;
+</span><span style="color:#e6db74">	&lt;/p&gt;`</span>,
+	<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;googleMaps&#39;</span>
+};
+
+document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;mapButton&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">ev</span>) {
+	<span style="color:#75715e">//Display a google map
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">privacyControl</span>.<span style="color:#a6e22e">query</span>(<span style="color:#a6e22e">googleMapsPerm</span>.<span style="color:#a6e22e">id</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">rs</span> =&gt; {
+		<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;granted&#39;</span>){
+			<span style="color:#a6e22e">showMap</span>();
+		<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;denied&#39;</span>){
+			<span style="color:#75715e">// :(
+</span><span style="color:#75715e"></span>		}<span style="color:#66d9ef">else</span>{
+			<span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">privacyControl</span>.<span style="color:#a6e22e">request</span>(<span style="color:#a6e22e">googleMapsPerm</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">rs</span> =&gt; {
+				<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;granted&#39;</span>) <span style="color:#a6e22e">showMap</span>();
+			});
+		}
+	});
+});
+</code></pre></div><p>That looks nice! Can we make it better?
+What if the browser then automatically added this header to requests for the backend?</p>
+<pre><code>PrivacyControl: googleMaps,perm2,perm3
+</code></pre><p>Well I&rsquo;m sold. But hey, it is my idea so I guess that doesn&rsquo;t mean much.
+So lets see what advantages this may have.</p>
+<ol>
+<li>Uses a permissions flow web developers are going to be increasingly exposed to anyway</li>
+<li>Asks users at the time it&rsquo;s needed rather than all at once at the start (when in theory the benefit of agreeing is evident)</li>
+<li>Browsers could store these against their accounts, remembering their choice across devices while being stateless on the server</li>
+<li>Easily shimmed thanks to local storage</li>
+<li>Consistent UI across sites (i.e. globally consistent opt-out mechanics for the user)</li>
+<li>Could save development effort on websites, it&rsquo;s stateless on the server side.</li>
+<li>It meets both the opt-in with informed consent requirement in GDPR and provides an opt out for CCPA</li>
+</ol>
+<p>Points 1, 2, and 5 are self-evident.
+Point 3 is a bit of a pro/con situation in that it could expose to the browser what sections of the site you use.
+It&rsquo;s something you&rsquo;d want to be able to choose in your Firefox/Chrome settings if you sync or not I&rsquo;d say.
+But given the browser can see what page etc. you hit anyway at even greater granularity I don&rsquo;t think it&rsquo;s a deal breaker for the convenience.
+Point 4 is always important when introducing new standards.</p>
+<p>Point 6 is the main thing here as I see it.
+Now we have a real positive business case for implementing this in new sites.
+You don&rsquo;t have to do the state management and tracking against users and the logic that flows with it at the back end.
+It&rsquo;s a simple javascript based trigger using a flow your developers (should) already be getting their head around.
+The browser integration cross-devices comes free of charge too.
+As a cherry on top <em>if</em> it was picked up by Chromium and Firefox you get to tell your local regulator you&rsquo;re following the industry standard adhered to by every major browser (Edge, Chrome, Firefox).
+Compared to everyone&rsquo;s different dialogs with different verbosity we have now.
+I&rsquo;d also potentially wager that doing it in response to user action to enable features will result in higher user acceptance rates (remember in GDPR you can&rsquo;t pre-tick the boxes!).</p>
+<p>So what about the potential drawbacks.</p>
+<ol>
+<li>It could be a large retrofit to existing sites</li>
+<li>Requires Javascript</li>
+<li>If your initial page needs lots of permissions it could get messy</li>
+<li>CCPA doesn&rsquo;t require an opt in making it less attractive to them as it might be for GDPR sites</li>
+</ol>
+<p>Point 1 as I see it is true regardless.
+Either I update every relevant page to understand GPC or I update it to understand the permissions flow.
+For point 2, well virtually every dialog I&rsquo;ve seen for GDPR needs javascript anyway.
+Point 3, I don&rsquo;t have a solution to that I must admit.
+Any UI designers got an idea?
+Finally Point 4, I also don&rsquo;t have many suggestions for this other than to point out as far as I can tell (but I&rsquo;m no CCPA expert) if you meet GDPR you meet CCPA in this regard<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+So by forgoing it you forgo getting US and EU compatibility in one go.
+Why not hit two birds with one stone?</p>
+<h1 id="final-thoughts---personal-opinion">Final thoughts - personal opinion<a href="#final-thoughts---personal-opinion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>In my personal opinion I think the bigger (stricter) target of GDPR is actually more important here as a target.
+The simple fact GPC as it sits leaves open the possibility in GDPR of having one supported mechanism opt in while another opts out is unacceptable.
+You could argue I could safely always defer to the opt-out.
+I&rsquo;ll counter with the support calls I&rsquo;ll get when a feature doesn&rsquo;t work despite someone consenting in the dialog because Brave defaulted the GPC to &lsquo;on&rsquo; without user interaction.
+Or because someone else on their PC enabled the GPC.
+I say this as someone who saw the GPC announcement and immediately went &ldquo;<em>How can I support this on our sites</em>&rdquo; to reluctantly come out at &ldquo;<em>I can&rsquo;t</em>&rdquo; after talking with colleges about the practical realities.
+In any case we&rsquo;ll need some qualified privacy lawyers to sort stuff out whatever we choose.
+But the community should have a few of those hiding somewhere.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Theres also the ePrivacy directive or &lsquo;cookie law&rsquo; etc. but for the purposes of this we&rsquo;re lumping it all together as thats a minefield for another time. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Other CCPA concerns exist like CCPA empowering users to delete the data business have collected, but GDPR also has those! But I&rsquo;m sure theres non overlapping areas somewhere IANAL. Focusing on dialogs and permission here (One problem at a time!). <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </div></div>
+
+  
+  
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

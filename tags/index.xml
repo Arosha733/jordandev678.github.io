@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jordan&#39;s blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Jordan&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2020 18:19:24 +0100</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CCPA</title>
+      <link>/tags/ccpa/</link>
+      <pubDate>Thu, 08 Oct 2020 18:19:24 +0100</pubDate>
+      
+      <guid>/tags/ccpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GDPR</title>
+      <link>/tags/gdpr/</link>
+      <pubDate>Thu, 08 Oct 2020 18:19:24 +0100</pubDate>
+      
+      <guid>/tags/gdpr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>/tags/privacy/</link>
+      <pubDate>Thu, 08 Oct 2020 18:19:24 +0100</pubDate>
+      
+      <guid>/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>/tags/web/</link>
+      <pubDate>Thu, 08 Oct 2020 18:19:24 +0100</pubDate>
+      
+      <guid>/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

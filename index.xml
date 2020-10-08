@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jordan&#39;s blog</title>
+    <link>/</link>
+    <description>Recent content on Jordan&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2020 18:19:24 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Global Privacy Control w.r.t GDPR</title>
+      <link>/posts/global-privacy-control/</link>
+      <pubDate>Thu, 08 Oct 2020 18:19:24 +0100</pubDate>
+      
+      <guid>/posts/global-privacy-control/</guid>
+      <description>Intro to GPC and GDPR The [Global Privacy Control (GPC)] is a great idea, in the same way do-not-track was a great idea. A consistent method for people to opt out of data sharing everywhere. People should after all have a simple and straight forward way to opt out of data sharing. But as evidenced by do-not-track that&amp;rsquo;s not enough.
+The GPC despite the &amp;lsquo;Global&amp;rsquo; in the name is particularly narrowly targeted.</description>
+    </item>
+    
+  </channel>
+</rss>
