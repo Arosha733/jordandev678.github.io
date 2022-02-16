@@ -9,7 +9,7 @@
 <meta name="description" content="Intro to GPC and GDPR The [Global Privacy Control (GPC)] is a great idea, in the same way do-not-track was a great idea. A consistent method for people to opt out of data sharing everywhere. People should after all have a simple and straight forward way to opt out of data sharing. But as evidenced by do-not-track that&amp;rsquo;s not enough.
 The GPC despite the &amp;lsquo;Global&amp;rsquo; in the name is particularly narrowly targeted." />
 <meta name="keywords" content="GDPR, CCPA, Privacy" />
-<meta name="robots" content="noodp" />
+<meta name="robots" content="noodp,noarchive,noydir" />
 <link rel="canonical" href="/posts/global-privacy-control/" />
 
 
@@ -197,7 +197,7 @@ document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e
 </span><span style="color:#75715e"></span>	<span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">privacyControl</span>.<span style="color:#a6e22e">query</span>(<span style="color:#a6e22e">googleMapsPerm</span>.<span style="color:#a6e22e">id</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">rs</span> =&gt; {
 		<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;granted&#39;</span>){
 			<span style="color:#a6e22e">showMap</span>();
-		<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;denied&#39;</span>){
+		}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;denied&#39;</span>){
 			<span style="color:#75715e">// :(
 </span><span style="color:#75715e"></span>		}<span style="color:#66d9ef">else</span>{
 			<span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">privacyControl</span>.<span style="color:#a6e22e">request</span>(<span style="color:#a6e22e">googleMapsPerm</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">rs</span> =&gt; {
@@ -215,7 +215,7 @@ So lets see what advantages this may have.</p>
 <li>Uses a permissions flow web developers are going to be increasingly exposed to anyway</li>
 <li>Asks users at the time it&rsquo;s needed rather than all at once at the start (when in theory the benefit of agreeing is evident)</li>
 <li>Browsers could store these against their accounts, remembering their choice across devices while being stateless on the server</li>
-<li>Easily shimmed thanks to local storage</li>
+<li>Easily polyfilled thanks to local storage</li>
 <li>Consistent UI across sites (i.e. globally consistent opt-out mechanics for the user)</li>
 <li>Could save development effort on websites, it&rsquo;s stateless on the server side.</li>
 <li>It meets both the opt-in with informed consent requirement in GDPR and provides an opt out for CCPA</li>
@@ -224,7 +224,9 @@ So lets see what advantages this may have.</p>
 Point 3 is a bit of a pro/con situation in that it could expose to the browser what sections of the site you use.
 It&rsquo;s something you&rsquo;d want to be able to choose in your Firefox/Chrome settings if you sync or not I&rsquo;d say.
 But given the browser can see what page etc. you hit anyway at even greater granularity I don&rsquo;t think it&rsquo;s a deal breaker for the convenience.
-Point 4 is always important when introducing new standards.</p>
+Point 4 is always important when introducing new standards.
+Although the header injection couldn&rsquo;t be shimmed you could certainly shim ajax requests.
+Or use a cookie.</p>
 <p>Point 6 is the main thing here as I see it.
 Now we have a real positive business case for implementing this in new sites.
 You don&rsquo;t have to do the state management and tracking against users and the logic that flows with it at the back end.
@@ -257,6 +259,11 @@ Or because someone else on their PC enabled the GPC.
 I say this as someone who saw the GPC announcement and immediately went &ldquo;<em>How can I support this on our sites</em>&rdquo; to reluctantly come out at &ldquo;<em>I can&rsquo;t</em>&rdquo; after talking with colleges about the practical realities.
 In any case we&rsquo;ll need some qualified privacy lawyers to sort stuff out whatever we choose.
 But the community should have a few of those hiding somewhere.</p>
+<p>I&rsquo;m sure some people will note that almost nothing here actually <strong>requires</strong> browser support and they&rsquo;d be correct.
+The main advantages of browser support are the potential cross-device synchronization coupled with the browser-consistent permissions UI.
+Theres not really any other way to get the same UI and management users are used to without browser support.
+In terms of managing user choices after they&rsquo;ve been made (withdraw consent) it would let users withdraw consent the same way they do so for other things such as notification permissions.
+In my view that alone would be an improvement.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -273,6 +280,24 @@ But the community should have a few of those hiding somewhere.</p>
 
   
   
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"></span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/posts/tabs-vs-spaces/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Tabs are an accessability issue</span>
+            </a>
+        </span>
+        
+        
+    </div>
+</div>
+
   
 
   
@@ -286,7 +311,7 @@ But the community should have a few of those hiding somewhere.</p>
   <div class="footer__inner">
     
       <div class="copyright">
-        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Tabs are an accessability issue :: Jordan&#39;s blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Preface There&amp;rsquo;s accessability arguments that are often mentioned, overlooked, or written off when it comes to the tab-vs-space war. Lets have a look at them from the point of view of someone they affect.
+" />
+<meta name="keywords" content="indentation, accessability, tabs" />
+<meta name="robots" content="noodp,noarchive,noydir" />
+<link rel="canonical" href="/posts/tabs-vs-spaces/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tabs are an accessability issue">
+<meta property="og:description" content="Tabs are an accessability issue not just a bikeshed argument" />
+<meta property="og:url" content="/posts/tabs-vs-spaces/" />
+<meta property="og:site_name" content="Jordan&#39;s blog" />
+
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-03-30 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/tabs-vs-spaces/">Tabs are an accessability issue</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-03-30 
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/indentation/">indentation</a>&nbsp;
+    
+    #<a href="/tags/accessability/">accessability</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="preface">Preface<a href="#preface" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>There&rsquo;s accessability arguments that are often mentioned, overlooked, or written off when it comes to the tab-vs-space war.
+Lets have a look at them from the point of view of someone they affect.</p>
+<p>I&rsquo;ve seen many a discussion about this in my time.
+Every one expresses copious falsehoods and assumes facts that frankly don&rsquo;t even survive momentary thought.
+Ignoring all of the technical arguments there&rsquo;s a rock solid accessability argument in there.
+Some good hearted soul eventually brings up the accessability issues and then gets shot down in various ways, commonly &ldquo;it doesn&rsquo;t affect you we need someone who it actually affects to comment&rdquo;.</p>
+<p>The accessability argument is so strong I&rsquo;ve never seen anyone counter it, and single digit numbers of people ever even attempt to.
+Instead there&rsquo;s just blanket refusal to engage with it, a strategy of punting it knowing full well that much like other accessability issues it affects a small enough percentage of people you&rsquo;ll manage to close out the discussion before they see it without ever having to actually combat the argument in the first place.
+Which is exactly what happens.</p>
+<p>This post exists primarily so those kind hearted souls can use it as a stick with which to beat the people employing that strategy because this is commentary from someone who it affects, exactly how it affects me, and why it&rsquo;s such a big fucking problem.</p>
+<h1 id="so-lets-talk-about-accessability">So lets talk about accessability<a href="#so-lets-talk-about-accessability" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Let&rsquo;s start with me. I&rsquo;m dyslexic, hi.
+There&rsquo;s lots of research around dyslexia and reading and there&rsquo;s more coming out about dyslexia specifically in terms of programming.
+They&rsquo;re interesting and I&rsquo;ve taken part in a couple of the studies myself but the results from research with respect to programming still need much more work.</p>
+<p>But we don&rsquo;t need to progress that far into academic literature for this because we&rsquo;re going to focus on a more base issue caused by dyslexia.
+That is: trouble identifying and separating whitespace.
+In case people intend to write this off as &ldquo;just one&rdquo; experience - the research for whitespace issues in dyslexia are legion.
+A minute on Google Scholar will net you as many citations as you&rsquo;d like, as will time just on Google looking at advice from accessability charities or guidance on creating dyslexia friendly teaching resources.
+The only way to avoid finding it is to avoid looking in the first place.</p>
+<p>There&rsquo;s fonts to help with dyslexia, one of the things they do is increase the inter-word spacing to help differentiate words.
+Or more plainly they make spaces bigger, because for many dyslexics <strong>spaces are hard</strong>.</p>
+<p>It&rsquo;s so plain that whitespace matters for dyslexia, never mind <a href="https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/">other</a> accessability issues, I&rsquo;m just going to move on with the discussion.</p>
+<h1 id="how-much-does-it-matter">How much does it matter<a href="#how-much-does-it-matter" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Dyslexia can be fairly individual up to a point.
+There&rsquo;s common themes such as trouble with whitespace and spelling but the degree to which each individual is affected in each individual area of issue varies.
+But for me when I&rsquo;m reading code I actually use ye-old-fashioned tab equivalent to 8 spaces.
+Smaller indents of 4 spaces are &ldquo;readable-ish&rdquo; but I&rsquo;ll lose the ability to skim the code because I can&rsquo;t see the indentation at a glance.</p>
+<p>So lets talk about skimming code because we do that a lot.
+We do it to quickly review and help out others when they say &ldquo;come look at this&rdquo;.
+We do it often to reaffirm the context in which we&rsquo;re about to write code.
+We do it to confirm what we&rsquo;ve just done makes sense.
+We programmers jump our eyeline back and forth along the code allot as we write it.
+So it&rsquo;s important to talk about skimming code because it&rsquo;s a very important skill we do a lot.</p>
+<p>We also need to talk about it because here&rsquo;s an interesting point of view.
+I&rsquo;m a very good programmer.
+I&rsquo;m not saying that to toot my own horn, there&rsquo;s a point in here.
+I am capable of reading, processing, and thinking about programs much, much, faster than my dyslexia leaves me capable of reading it word by word, letter by letter.
+I make up for that shortfall in various ways that I&rsquo;ve adapted to over the years to allow myself to intake the code at a rate that keeps up with my brains processing of the code.
+So how do I skim code?</p>
+<h1 id="skimming-code-from-my-point-of-view">Skimming code, from my point of view<a href="#skimming-code-from-my-point-of-view" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If I have my 8 spaces the indents are clear and life goes on - that&rsquo;s the starting point.</p>
+<p>If I don&rsquo;t have that my life gets more complicated.
+In properly designed languages where whitespace doesn&rsquo;t matter I can make up for the loss of rapid identification by looking at the syntax.
+When I&rsquo;m called in to help with code indented with 4 spaces in C-like languages I&rsquo;ll start skimming the code noting the block entry/exit patterns &ldquo;while(){&rdquo;, &ldquo;if(){&rdquo;, &ldquo;}else{&rdquo;, etcetera to identify &ldquo;the indentation&rdquo; instead of actually paying attention to the whitespace indent.</p>
+<p>If it&rsquo;s 2 spaces I&rsquo;ll still try to do that, but it&rsquo;s even more difficult because everything is just flat.
+I cannot stress this enough <strong>2 space indents do not exist to me</strong>.
+I don&rsquo;t mean I don&rsquo;t like them; they don&rsquo;t even look like they&rsquo;re there.</p>
+<p>Note how I said the <em>patterns</em> above.
+I&rsquo;m not actually looking at the text <strong>I&rsquo;m looking at the shape the compound statement makes</strong> because I can more reliably identify that.
+Remember I can&rsquo;t both skim and look at the letters because I&rsquo;m dyslexic.
+So that is one trick I&rsquo;ve adapted over the years to read code faster.
+I read it once to identify the statement and what it does &ldquo;this loops i until z&rdquo;, assign that shape to that statement in my brain, then when I go back to skim the code I pattern match on the shape.</p>
+<p>For what it&rsquo;s worth that&rsquo;s also whyILikeCamelCase.
+The rises and falls often create distinctive shapes I can tell apart without actually having to care what the letter is:</p>
+<ul>
+<li>i -&gt; ■</li>
+<li>ret -&gt; ■■■</li>
+<li>myNewObject -&gt; ■■█■■█■■■■■</li>
+<li>curDate -&gt; ■■■█■■■</li>
+<li>didYouKnowIGetPaidByTheLetter -&gt; ■■■█■■█■■■██■■█■■■█■█■■█■■■■■</li>
+<li>while(){} -&gt; ■■■■■(){</li>
+<li>if(){} -&gt; ■■(){</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#66d9ef">int</span> <span style="color:#960050;background-color:#1e0010">■</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>;
+<span style="color:#960050;background-color:#1e0010">■■■■■</span>(<span style="color:#960050;background-color:#1e0010">■</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>){
+	<span style="color:#960050;background-color:#1e0010">■■</span>(<span style="color:#960050;background-color:#1e0010">■</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">continue</span>;
+	<span style="color:#960050;background-color:#1e0010">■■■█■■■</span> <span style="color:#f92672">=</span> Date();
+	<span style="color:#960050;background-color:#1e0010">■■█■■█■■■■■</span> <span style="color:#f92672">=</span> Object(<span style="color:#960050;background-color:#1e0010">■</span>, <span style="color:#960050;background-color:#1e0010">■■■█■■■</span>);
+	<span style="color:#960050;background-color:#1e0010">■</span><span style="color:#f92672">++</span>;
+}
+</code></pre></div><p>Not as bad as you might have intuitively expected? Anyway, I digress.</p>
+<p>Basically, I treat skimming code like one of those shape matching programming tests you do before job interviews.
+Except instead of it being an annoying analog I have to tolerate to get a job it&rsquo;s how I generally have to think about it.
+I&rsquo;ll read &ldquo;curDate&rdquo; once to note in my head &ldquo;this shape is the date&rdquo; then I&rsquo;ll match it in the future by looking for the shape, not the letters - because again I can&rsquo;t reliably identify the letters at a glance.
+But those variables are all very distinctive when viewed as a single shape. In the case above even just by their width is sufficient. Dyslexia, fun. But now I can read the code at a rate more comparable to how quickly my brain can process it.</p>
+<h1 id="so-lets-talk-about-indents-and-syntax">So lets talk about indents and syntax<a href="#so-lets-talk-about-indents-and-syntax" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>So, shapes are important to me.
+Now lets talk about indents because they&rsquo;re the main point of this post.</p>
+<h2 id="indents">Indents<a href="#indents" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If I have 8 spaces as an indent the indent levels become easy to differentiate and I skim based on that like a &ldquo;normal&rdquo; person.
+If I don&rsquo;t have those; then identifiable syntactic elements at block entry and exist points are very important to me <strong>because pattern matching against them is my coping mechanism to avoid being hampered by my dyslexia</strong>.</p>
+<p>There&rsquo;s two relevant trends amongst currently popular languages.
+The first is to forgo block level syntax and instead use indentation.
+OK&hellip; I&rsquo;ll be honest I don&rsquo;t really see the need but I can tolerate the idea.
+But remember <strong>this robs me of my coping mechanism</strong>.</p>
+<p>The second thing is to then force people to indent with spaces so they look the same everywhere.
+Usually by fixing it to 4 spaces, or in the case of YAML it&rsquo;s 2.
+Now you&rsquo;ve removed my ability to skim at my working speed and my coping mechanism for not being able to do that.
+It&rsquo;s so important I&rsquo;m going to say it again</p>
+<p><strong>These trends remove both my ability to skim AND my coping mechanism for not being able to do that</strong></p>
+<p>Now, I hope this gives people some understanding of why my vocabulary of expletives for people endorsing these trends is expansive.</p>
+<h2 id="syntax">Syntax<a href="#syntax" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>There&rsquo;s also important syntactical points on the difference between the two.
+Tab is a syntax element that means &ldquo;indent here&rdquo;. It&rsquo;s entirely open-minded on how that looks visually but it&rsquo;s very clear what it means syntactically.
+It&rsquo;s rarely used outside that context in code and the only other place it would even really make sense to put it is in strings.
+Bar strings, following the rules of language syntax running <code>s/\t/  </code> through a code file would be pretty safe.
+You&rsquo;ll even end up with a sanely indented file.</p>
+<p>On the other hand spaces mean several things, are everywhere in the code, and sometimes may or may not be syntactically important.
+It is absolutely not safe to do <code>s/  /\t</code> within the syntax rules of languages.
+Some spaces are block indents, some are alignment in the name of prettiness.
+But suffice to say the resulting file is unlikely to be sanely indented and in &ldquo;whitespace is important&rdquo; languages you may have actually just changed the meaning. Ouch.</p>
+<p>You can mitigate the issue with tabs almost entirely by anchoring to the start of the line because except multiline strings they have to just be indentation in most code styles.
+That doesn&rsquo;t work for spaces because some of the spaces were indentation, some of them were alignment for prettiness. Both are before any other syntax elements. I have no doubt there&rsquo;s other issues if we keep thinking about this.
+Not the least of which; you&rsquo;re editing a non-regular language using a regular expression</p>
+<p><img src="https://imgs.xkcd.com/comics/perl_problems.png" alt="XKCD regex problems"></p>
+<p>So to do it safely you need full on language-aware editors and formatters.
+That&rsquo;s a mighty high bar we just made a base level requirement.</p>
+<h1 id="but-ides-and-settings-are-a-thing">But IDEs and settings are a thing?<a href="#but-ides-and-settings-are-a-thing" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>They are indeed and lets talk about them.
+But first lets talk about the sentiment underlying the statement by clarifying it.
+That statement is more accurately worded as &ldquo;But assistive technologies are thing, so why does it matter&rdquo;</p>
+<p>Well, why does wheelchair accessible public transport matter when specialist taxis are a thing?
+It matters because you shouldn&rsquo;t be making it harder for a particular minority just because &ldquo;they can cope&rdquo;.
+This is especially true when making their life easier <strong>costs you nothing</strong>.</p>
+<p>After all, we actively put aria links in our HTML to make the visually impaired have an easier life.
+I have not heard anyone dare deploy the same &ldquo;but you can get by&rdquo; argument in that context.
+Why are they different?</p>
+<p>So, I don&rsquo;t agree that the core sentiment regarding IDEs existence is even valid.
+The deployment of the argument betrays a lack of empathy.
+But moving on&hellip;</p>
+<h2 id="are-ides-even-a-solution">Are IDEs even a solution?<a href="#are-ides-even-a-solution" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Lets dig further into IDEs though and test the arguments around this.
+First, &ldquo;IDEs exist everywhere&rdquo;. Excuse my Northern Irish variant of french, but, do they fuck.
+This is one of those arguments that I&rsquo;m baffled by because it&rsquo;s so trivially disprovable and untrue to anyone with experience that I can&rsquo;t believe it gets the traction it does. Let me list a few.</p>
+<p>Do you know how I diff code I&rsquo;m about to commit?
+I wack open a terminal and type &ldquo;git diff&rdquo;.
+Do you know what git diff can&rsquo;t do? Intelligent code-aware indentation changing.
+IDEs with the language-aware editor can&rsquo;t even do it easily.
+They need one renderer that&rsquo;s &ldquo;diff aware&rdquo; to identify the diff syntax elements.
+They then need another one that&rsquo;s &ldquo;language aware&rdquo; to do the language part.
+Only then can they combine that into one render with different indentation levels.</p>
+<p>Have you ever had to edit a file on a headless box through a terminal with nano?
+Or god forbid had to setup vim, which out of the box is <em>very</em> opinionated on how you should indent python and very difficult to change.
+You&rsquo;ll find the necessary command, put it in your own config, only to find by virtue of including your own config the package one isn&rsquo;t included anymore and you&rsquo;ve lost all the other out-of-the-box features in the process you now need to go fix too.</p>
+<p>Ever used an online markup editor. For example on Azure or AWS?
+You know one of the crappy ones that got left behind where there&rsquo;s no settings and a tab <em>must</em> be 2 spaces?</p>
+<p>Ever had to poke about and debug a remote container via the terminal because of a intermittent bug you and your team can&rsquo;t for the life of you get it to happen in dev?
+Edit the build system on the headless box?
+Work with embedded devices that can&rsquo;t run the linter never mind vscode-remote?</p>
+<p>I&rsquo;m currently playing with Home Assistant in my house on a headless box which while lovely has left me in a YAML hellscape of the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">alias</span>: <span style="color:#ae81ff">Lights off at sunrise or away</span>
+<span style="color:#f92672">description</span>: <span style="color:#e6db74">&#39;&#39;</span>
+<span style="color:#f92672">trigger</span>:
+- <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">sun</span>
+<span style="color:#f92672">event</span>: <span style="color:#ae81ff">sunrise</span>
+<span style="color:#f92672">offset</span>: <span style="color:#e6db74">&#39;0&#39;</span>
+- <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">state</span>
+<span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">group.people</span>
+<span style="color:#f92672">to</span>: <span style="color:#ae81ff">not_home</span>
+<span style="color:#f92672">condition</span>: []
+<span style="color:#f92672">action</span>:
+- <span style="color:#f92672">scene</span>: <span style="color:#ae81ff">scene.lights_off</span>
+<span style="color:#f92672">mode</span>: <span style="color:#ae81ff">single</span>
+<span style="color:#f92672">alias</span>: <span style="color:#ae81ff">Lights on at sunset and home</span>
+<span style="color:#f92672">description</span>: <span style="color:#e6db74">&#39;&#39;</span>
+<span style="color:#f92672">trigger</span>:
+- <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">numeric_state</span>
+<span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">sun.sun</span>
+<span style="color:#f92672">attribute</span>: <span style="color:#ae81ff">elevation</span>
+<span style="color:#f92672">below</span>: <span style="color:#e6db74">&#39;-4&#39;</span>
+- <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">state</span>
+<span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">group.people</span>
+<span style="color:#f92672">to</span>: <span style="color:#ae81ff">home</span>
+<span style="color:#f92672">condition</span>:
+- <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">numeric_state</span>
+<span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">sun.sun</span>
+<span style="color:#f92672">attribute</span>: <span style="color:#ae81ff">elevation</span>
+<span style="color:#f92672">below</span>: <span style="color:#e6db74">&#39;-4&#39;</span>
+- <span style="color:#f92672">condition</span>: <span style="color:#ae81ff">state</span>
+<span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">group.people</span>
+<span style="color:#f92672">state</span>: <span style="color:#ae81ff">home</span>
+<span style="color:#f92672">action</span>:
+- <span style="color:#f92672">scene</span>: <span style="color:#ae81ff">scene.lights_on</span>
+<span style="color:#f92672">mode</span>: <span style="color:#ae81ff">single</span>
+</code></pre></div><p>Before you go &ldquo;ah but you haven&rsquo;t indented that!&rdquo; Home assistant seems to indent with 2 spaces - thats how I see it.
+Try parsing that trainwreck quickly.
+The point of this post isn&rsquo;t about how you see it, it&rsquo;s about how I see it.
+I can edit it online instead of the terminal.
+But that indents with 2 spaces too!
+And theres no settings to change it!
+An IDE can&rsquo;t save me here.</p>
+<p>When setting up the same headless box I attempted to set a static IP only to find Ubuntu pushing people to netplan.
+Netplan uses&hellip; you guessed it&hellip; yaml.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">network</span>:
+  <span style="color:#f92672">version</span>: <span style="color:#ae81ff">2</span>
+  <span style="color:#f92672">renderer</span>: <span style="color:#ae81ff">networkd</span>
+  <span style="color:#f92672">ethernets</span>:
+    <span style="color:#f92672">enp3s0</span>:
+      <span style="color:#f92672">addresses</span>:
+        - <span style="color:#ae81ff">10.10.10.2</span><span style="color:#ae81ff">/24</span>
+      <span style="color:#f92672">nameservers</span>:
+        <span style="color:#f92672">search</span>: [<span style="color:#ae81ff">mydomain, otherdomain]</span>
+        <span style="color:#f92672">addresses</span>: [<span style="color:#ae81ff">10.10.10.1</span>, <span style="color:#ae81ff">1.1.1.1</span>]
+      <span style="color:#f92672">routes</span>:
+        - <span style="color:#f92672">to</span>: <span style="color:#ae81ff">default</span>
+        <span style="color:#f92672">via</span>: <span style="color:#ae81ff">10.10.10.1</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">network</span>:
+  <span style="color:#f92672">version</span>: <span style="color:#ae81ff">2</span>
+  <span style="color:#f92672">renderer</span>: <span style="color:#ae81ff">networkd</span>
+  <span style="color:#f92672">ethernets</span>:
+  <span style="color:#f92672">enp3s0</span>:
+    <span style="color:#f92672">addresses</span>:
+    - <span style="color:#ae81ff">10.10.10.2</span><span style="color:#ae81ff">/24</span>
+    <span style="color:#f92672">nameservers</span>:
+    <span style="color:#f92672">search</span>: [<span style="color:#ae81ff">mydomain, otherdomain]</span>
+    <span style="color:#f92672">addresses</span>: [<span style="color:#ae81ff">10.10.10.1</span>, <span style="color:#ae81ff">1.1.1.1</span>]
+    <span style="color:#f92672">routes</span>:
+    - <span style="color:#f92672">to</span>: <span style="color:#ae81ff">default</span>
+    <span style="color:#f92672">via</span>: <span style="color:#ae81ff">10.10.10.1</span>
+</code></pre></div><p>See these, they&rsquo;re the same file to me.
+Now I need an editor and an IDE just to set a static IP on a linux machine now?</p>
+<p>I can keep going, but suffice to say all of these situations leave you poking about in YAML markup, Python files, etcetera, etcetera, without any of the &ldquo;IDE&rdquo; comforts that are apparently so ubiquitous that &ldquo;this discussion isn&rsquo;t important&rdquo;.</p>
+<p>So we can conclude at this point that the argument that &ldquo;IDEs exist so it doesn&rsquo;t matter&rdquo; is nonsense.
+The actual statements are &ldquo;Systems that let you set the tab width are everywhere&rdquo;
+Systems that let you change the multi-space indentation exist&hellip; but are neither ubiquitous or always possible to use.</p>
+<h1 id="edge-cases">Edge cases<a href="#edge-cases" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Programmers will understand it&rsquo;s not the core idea that is often the difficult part.
+It&rsquo;s the edge cases around it you have to account for and handle.
+There&rsquo;s lots of edge cases where the &ldquo;use spaces and an IDE&rdquo; statement falls over it&rsquo;s riddled with them.
+There&rsquo;s only one real edge case where the &ldquo;use tabs and whatever you want&rdquo; version falls over, people just dress it up differently into several points - and I&rsquo;m about to tackle that.</p>
+<p>The edge case is this, I want to align these things.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">foo</span>(one,
+       two,
+       three){
+}
+<span style="color:#75715e">//How to best do it
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">foo</span>(one,
+<span style="color:#f92672">~~~~~~~</span>two,
+<span style="color:#f92672">~~~~~~~</span>three){
+}
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">foo</span>(one,
+<span style="color:#f92672">&lt;&lt;</span>TAB<span style="color:#f92672">!&gt;&gt;</span>two,
+<span style="color:#f92672">&lt;&lt;</span>TAB<span style="color:#f92672">!&gt;&gt;</span>three){
+}
+<span style="color:#75715e">//For point 3
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">foo</span>(<span style="color:#f92672">~~</span>one,
+<span style="color:#f92672">&lt;&lt;</span>TAB<span style="color:#f92672">!&gt;&gt;~</span>two,
+<span style="color:#f92672">&lt;&lt;</span>TAB<span style="color:#f92672">!&gt;&gt;~</span>three){
+}
+</code></pre></div><p>The argument goes like this.</p>
+<ol>
+<li>We have a need to align these three things.</li>
+<li>If we do it with tabs it doesn&rsquo;t align</li>
+<li>We could use tabs and then spaces but different editors do different things</li>
+<li>Starting world war three would be preferable to having to deal with this so you should go home.</li>
+</ol>
+<p>Tackling these in turn.
+The first point on which the entire scenario exists is a purely subjective one made on some ill-defined personal aesthetic taste.
+It contains no objective basis and the code style is constructed deliberately so any attempt to touch it will cause breakage.
+It&rsquo;s designed to be an in-accessible as possible.</p>
+<p>Second, &ldquo;Tabs will break it&rdquo; I said the style is designed to break, so indeed it does.
+However, it&rsquo;s so delicate that not only does it break with tabs - it breaks with spaces if you change the width of your space driven indent.
+So while it backs up the statement &ldquo;tabs would break it&rdquo; so does the advocated alternative &ldquo;Change the space width in the IDE&rdquo;.
+It&rsquo;s a nonsense argument not consistent with itself and always presented in isolation because it doesn&rsquo;t integrate with the rest of the discussion without some hefty cognitive dissonance.</p>
+<p>Third, differing behavior if we use tabs + spaces illustrated by the third example.
+The behavior can indeed differ between editors.
+But most editors can be set to handle it usually called &ldquo;smart indentation&rdquo;.
+But that aside it&rsquo;s also important to remember the context in which this argument is originally framed.
+That context is one of advocating the status-quo and addressing other concerns by telling people to &ldquo;use their IDE&rdquo;.
+But suddenly because the person deploying the argument is the one faced with having to use an IDE, suddenly we&rsquo;re being unreasonable.
+It&rsquo;s at best, a glib argument.</p>
+<p>Finally, I don&rsquo;t actually think it&rsquo;s that important to deal with a case that&rsquo;s deliberately constructed to be as hostile to other needs as possible.
+Any &ldquo;style&rdquo; that relies on character perfect alignment across multiple lines is by design impossible to use not just when tabs or spaces are mixed but when anyone on the project adjusts the width of an &ldquo;indent&rdquo;.
+It&rsquo;s also worth reiterating explicitly the logical train in this argument.
+<code>This is important -&gt; tabs + spaces break it -&gt; therefore we can't use it&quot;</code>
+Accepting it as a counter-argument is to accept that anything that fits in the statement must be un-acceptable.
+But changing the space width breaks it too:
+<code>This is important -&gt; spaces break it -&gt; therefore we can't use it&quot;</code>
+The inevitable conclusion of this argument is accessability is impossible and editors should actually all just remove the setting for letting people pick their own indents.
+The argument is rarely taken to that logical conclusion because they know it would sound stupid but it is the natural and inevitable conclusion of the argument itself.
+You can attempt to construct restrictions on this logical train of thought to prevent it applying on mass but you quickly end up falling into the logical consistency issues that hinder the other arguments.
+So I think we can discount it.</p>
+<h1 id="checkpoint">Checkpoint<a href="#checkpoint" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>So where are we:</p>
+<ol>
+<li>There are confirmed and well documented disabilities that require the ability to render documents with varying indentation levels</li>
+<li>Tabs deals with this natively, spaces are incapable of doing so without lots of complex assisting software</li>
+<li>Plenty of tools which are mandatory in the modern software house <code>git diff</code>  for example do not and cannot be expected to support that level of language awareness and the tools necessary to wrap it are not always available or practical.</li>
+<li>The only edge case &ldquo;give me alignment or give me death&rdquo; might need some work - but the fact it would be &ldquo;broken&rdquo; by the change is made irrelevant by the fact the case is already broken now in the context of the proposed solutions. The fact it will still be broken is hardly relevant.</li>
+</ol>
+<p>Most of the arguments for spaces devolve into logical inconsistencies &ldquo;Tabs render differently so we have to use spaces, but you can change your spaces to render differently so it&rsquo;s fine&rdquo;.
+Or they turn into questions about how it&rsquo;s difficult to provide guaranteed alignment when people are allowed to change the width of an indent. The logical inconsistencies should be thrown out of the basis they can&rsquo;t even reconcile it amongst themselves.
+The code style arguments should be thrown out on the basis the styles in question are constructed deliberately to be immutable and break if anything changes - even under the status quo.
+By definition they are inflexible and impossible to be used in an accessible fashion, and if you&rsquo;re deploying this argument at least have the courage to admit you&rsquo;re advocating putting your code style above accessability.</p>
+<h1 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>You don&rsquo;t have to agree with me at this moment.
+But if nothing else this should be enough to agree there&rsquo;s a fucking important discussion in here to be had that the community has <strong>never</strong> addressed head on.
+The decisions are made in the bowels of language RFCs inhabited mostly by those who are not affected by the decision anyway.
+I&rsquo;ve clearly outlined how and why it impacts me and why these choices directly matter.
+Others have outlined how it affects them and people they know.
+Nobody has the right anymore in these discussions to suggest in good-faith &ldquo;there&rsquo;s a dearth of evidence&rdquo;.
+If any kind soul is raising this in the RFCs in the future and gets told they need first hand input, ping me and pull me into it because I&rsquo;m happy to die on this hill.</p>
+<p>The arguments against tabs majorly focus on rendering differences.
+Accessability <strong>requires</strong> rendering differences and flexibility.
+The consistency of spaces is not the solution <strong>its the problem</strong>.
+The fundamental place I always end up at when discussing this with people is this:
+With spaces only the original author gets what they want and the semantic meaning required to guarantee accurate reconstruction of the document is lost and replaced with heuristics.
+With tabs everyone gets what they want and accessability is guaranteed.
+If accessability isn&rsquo;t enough for people to start thinking about this then I despair.</p>
+<h1 id="appendix">Appendix<a href="#appendix" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>There&rsquo;s other bizarre arguments I hear often too and I&rsquo;ll run through as an appendix.
+This will be a less&hellip; diplomatic&hellip; section as frankly some of these stances are worthy of nothing but scorn and contempt.</p>
+<h2 id="you-should-use-spaces-because-editors-treat-tabs-differently">You should use spaces because editors treat tabs differently<a href="#you-should-use-spaces-because-editors-treat-tabs-differently" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Covered a fair bit above but lets discuss this one a bit more, because personally I find it a glib bad-faith argument.
+But I&rsquo;ve heard people deploy it that I know did intend it to be a good-faith argument.
+The core statement &ldquo;tabs can be rendered differently&rdquo; is accurate.
+Some render it as 4, some as 8, some have semi-smart indents that go to &ldquo;tab stops&rdquo; though those are pretty dead at this point.</p>
+<p>But&hellip; we just spent most of a post talking about how important it is that we can display it how we want.
+Remember the whole argument for IDEs earlier was they&rsquo;ll let us change it to what we want so just use spaces.
+This &ldquo;tab rendering is a mess&rdquo; argument pops up to justify the loss of semantic meaning that comes with the tab character.
+However, the retort by the space-loving crowd to the other problems it creates is to make rendering of spaces just as messy by having everyone set their IDE to whatever indent level they want.
+With an extra helping of added heuristic&rsquo;s to detect the indent size to add more points of failure.</p>
+<p>You can&rsquo;t say &ldquo;We need to use spaces because tab rendering can vary&rdquo; then follow it with &ldquo;It doesn&rsquo;t matter anyway because you can vary your space indent rendering to what you like&rdquo;.
+You must get some terrible headaches from that level of cognitive dissonance.</p>
+<p>Weather they realise it or not what people deploying this argument are saying is they want <em>their</em> indentation level set out of the box.
+Everyone else be damned.
+It&rsquo;s a glib argument about defaults dressed up a substantive technical comment.
+It&rsquo;s just occasionally deployed by people in good-faith who didn&rsquo;t really think about it themselves, they just heard it and thought it seemed <em>prima facie</em> reasonable and so parroted it back.
+But it&rsquo;s without any merit.</p>
+<h2 id="it-is-and-has-been-the-most-common-choice-by-code-formatters">It is and has been the most common choice by code formatters<a href="#it-is-and-has-been-the-most-common-choice-by-code-formatters" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>That&rsquo;s not a argument, that&rsquo;s a statement.
+The statement is accurate but the argument form of that is &ldquo;It&rsquo;s been done for a long time by many formatters so it must be a good thing&rdquo;.
+Or to put it another way the argument boils down to &ldquo;it&rsquo;s tradition&rdquo;.</p>
+<p><img src="tradition.png" alt="Just because you&rsquo;ve always done something that way doesn&rsquo;t mean it&rsquo;s not incredibly stupid"></p>
+<p>Code formatters do it for various reasons.
+Mainly because one of the features they offer is rock-solid unvarying alignment of certain elements.
+For example streaming every argument to a function down in a perfect line.
+That&rsquo;s most easily done when every character is the same width.
+In fact no, let me rephrase that, for that to be done it&rsquo;s <strong>necessary</strong> for every character to have immutable relative widths.
+But I&rsquo;ll circle back to that.</p>
+<p>First, that type of formatting being a &ldquo;good thing&rdquo; is at best a subjective opinion based purely on some internal definition of prettiness.
+There&rsquo;s zero facts involved in it.</p>
+<p>Second the fact it&rsquo;s necessary for every character to have a global immutable relative width means the &ldquo;change your own settings&rdquo; argument from earlier means when I load it up with my 8-space width indents in my IDE will kick it all out of alignment again.
+That reinforces the point I ended the last argument with as this is a continuation of the same base desire.
+It&rsquo;s a desire to get it to look how <em>you</em> want natively and force other people to change.
+It&rsquo;s not that it&rsquo;s important for readability because they have no problem suggesting solutions that break that aspect of the formatting.
+But it&rsquo;s ok because they break it for &ldquo;<em>the other people</em>&rdquo;.</p>
+<h2 id="any-language-which-uses-tabs-in-its-formatting-will-represent-a-lack-of-consistency-between-languages-that-also-needs-to-be-considered-when-judging-how-to-approach-things">Any language which uses tabs in its formatting will represent a lack of consistency between languages. That also needs to be considered when judging how to approach things.<a href="#any-language-which-uses-tabs-in-its-formatting-will-represent-a-lack-of-consistency-between-languages-that-also-needs-to-be-considered-when-judging-how-to-approach-things" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I&rsquo;ve lifted this quote from one of the discussions because I think it&rsquo;s worth shooting in the face exactly as written.
+It&rsquo;s just a variation on &ldquo;We&rsquo;ve always done it so we should continue to do so&rdquo;.</p>
+<p>Let me drop that exact construct into a different context.</p>
+<p>&ldquo;Any <code>business</code> which uses <code>wheelchair ramps</code> in its <code>entrace</code> will represent a lack of consistency between <code>businesses</code>. That also needs to be considered when judging how to approach things.&rdquo;</p>
+<p>I&rsquo;m not intending to be harsh or suggest the comment was intended by the poster with that sentiment because I don&rsquo;t believe it was.
+But hopefully that makes clear why that argument at best a bit ignorant.
+It&rsquo;s ignorant because I didn&rsquo;t actually drop it into a different context to make that point.
+Both are about the accessability of vital things to minorities with some disability.
+Inertia is not an excuse for discrimination.
+Plus, &ldquo;but the other kids do it&rdquo; is something your parents should have told you was a terrible rationale when you grew up.</p>
+<h2 id="we-cant-force-people-to-use-tabs-anyway-theyll-just-change-it-to-spaces">We cant force people to use tabs anyway, they&rsquo;ll just change it to spaces<a href="#we-cant-force-people-to-use-tabs-anyway-theyll-just-change-it-to-spaces" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Indeed you cannot force people.
+But most people roll with the defaults.
+It&rsquo;s also why Bootstrap examples have Aria info in them for visually impaired people.
+Not because they can force people to do it but because they can follow an accessible standard in their work and most people will just copy it in.
+Make it the default so I can stop arguing with you and start arguing with other people because all I get at the minute is &ldquo;But its the standard from PEP or RUSTFMT&rdquo; or whatever and told to go talk to you guys - who of course then tell me it&rsquo;s what everyone else does. See the damn circular argument in there?</p>
+<h2 id="theres-a-dearth-of-evidence-the-accessibility-argument-is-true">There&rsquo;s a dearth of evidence the accessibility argument is true<a href="#theres-a-dearth-of-evidence-the-accessibility-argument-is-true" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><em>argumentum ad ignorantiam</em> it&rsquo;s a basic tenant of logic that the absence of evidence is not evidence of absence.
+It&rsquo;s hardly a fucking surprise that when you don&rsquo;t ask those with accessability issues to comment you get no comments about accessability issues.
+I&rsquo;ve clearly outlined how and why it impacts me and why these choices directly matter here.
+<a href="https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/">Others</a> have clearly outlined how it affects people they know.
+Nobody can claim any longer there&rsquo;s a lack of evidence from people affected.
+Continuing to do so is a bad-faith attempt to raise the bar for changing to always be one rung on the ladder higher than the current body of evidence.</p>
+<h1 id="it-would-cause-code-churn">It would cause code churn<a href="#it-would-cause-code-churn" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>I have nothing but contempt for this position.
+They would need to change <strong>one damn line</strong> in a config to set it back to spaces.
+The point is it sets up the defaults to be accessible so it can start bleeding in.</p>
+<p>You said a minute ago I should be changing all these settings and installing all these tools to help me.
+I should have to use IDEs, I should have to use formatters, I should have to use git diff through VSCode.
+Why am I supposed to do all that <strong>in order to be able to work normally</strong> but if anybody else has to change one setting it&rsquo;s a travesty?
+They can change one line in a config file to let people like me go about with our life like normal.
+For us it&rsquo;s not a one line change.</p>
+<p>Besides, it&rsquo;d hardly be the most destructive change we&rsquo;ve ever seen language maintainers decide to push out when they wanted it.
+This on the other hand is something they don&rsquo;t even want to talk about, and the community as a whole is quite happy with them taking the stance &ldquo;My mind is made up, don&rsquo;t confuse me with the facts&rdquo;</p>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"></span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/global-privacy-control/">
+                <span class="button__text">Global Privacy Control w.r.t GDPR</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
